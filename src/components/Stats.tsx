@@ -71,13 +71,6 @@ const Stats = () => {
       label: "Dedicated Support",
       description: "Always Available",
     },
-    {
-      icon: Users,
-      value: 5000,
-      suffix: "+",
-      label: "Happy Customers",
-      description: "And Growing",
-    },
   ];
 
   return (
@@ -97,7 +90,7 @@ const Stats = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (

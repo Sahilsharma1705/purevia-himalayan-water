@@ -1,21 +1,21 @@
 import { useState } from "react";
 import { X } from "lucide-react";
+import productLineup from "@/assets/product-lineup.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
-import bottleHero from "@/assets/bottle-hero.png";
 import waterPour from "@/assets/water-pour.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
+    { src: productLineup, caption: "Available in 500ml, 1L & 5L", className: "md:col-span-3 md:row-span-2" },
     { src: gallery1, caption: "Purevia 1 Litre", className: "md:col-span-1 md:row-span-1" },
-    { src: gallery2, caption: "Refreshing Moments", className: "md:col-span-1 md:row-span-2" },
+    { src: gallery2, caption: "Refreshing Moments", className: "md:col-span-1 md:row-span-1" },
     { src: gallery3, caption: "Family Hydration", className: "md:col-span-2 md:row-span-1" },
-    { src: gallery4, caption: "Reliable Delivery", className: "md:col-span-2 md:row-span-1" },
-    { src: bottleHero, caption: "Premium Quality", className: "md:col-span-1 md:row-span-1" },
+    { src: gallery4, caption: "Reliable Delivery", className: "md:col-span-1 md:row-span-1" },
     { src: waterPour, caption: "Crystal Clear", className: "md:col-span-1 md:row-span-1" },
   ];
 
